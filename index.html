@@ -10,7 +10,22 @@
     <style>
         .body {
             font: 400 15px/1.8 Lato, sans-serif;
-            color: #777;
+
+        }
+
+        footer {
+            padding: 22px;
+        }
+
+
+
+        .navbar {
+            margin-bottom: 0;
+            background-color: #2d2d30;
+            border: 0;
+            font-size: 13px;
+            letter-spacing: 4px;
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -25,16 +40,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item me-5">
+                    <li class="nav-item me-3">
                         <a class="nav-link active" aria-current="page" href="#">HOME</a>
                     </li>
-                    <li class="nav-item me-5">
+                    <li class="nav-item me-3">
                         <a class="nav-link" href="#band">ABOUT</a>
                     </li>
-                    <li class="nav-item me-5">
+                    <li class="nav-item me-3">
                         <a class="nav-link" href="#tour">TOUR</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                    <li class="nav-item dropdown ">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             MORE
@@ -98,37 +116,43 @@
     <!-- end carousel -->
 
     <!-- Container (The Band Section) -->
-    <div id="band" class="container text-center mt-5">
-        <h3>GREEN DAY</h3>
-        <p><em>Pop Punk isn't Dead!</em></p>
-        <p>Green Day is an American punk rock band formed in 1986 in Berkeley, California. The band consists of three
-            members, Billie Joe Armstrong (vocals, guitar), Mike Dirnt (bass guitar, backing vocals), and Tré Cool
-            (drums,
-            percussion). They are known for their high-energy performances, catchy melodies, and socially conscious
-            lyrics.
-            Green Day has released over a dozen albums, including the hit albums "Dookie", "American Idiot", and "21st
-            Century
-            Breakdown". They have won multiple Grammy Awards and have been inducted into the Rock and Roll Hall of Fame.
-            With
-            a loyal fan base and a legacy of influential music, Green Day continues to be a significant force in the
-            punk rock
-            genre.</p>
-        <br>
-        <div class="row">
-            <div class="col-md-4">
-                <p class="text-center"><strong>Billi Joe</strong></p><br>
-                <img src="img/11.jpeg" class="rounded-circle person" alt="Random Name" width="250" height="255">
-            </div>
-            <div class="col-md-4">
-                <p class="text-center"><strong>Mike Dirnt</strong></p><br>
-                <img src="img/12.jpeg" class="rounded-circle person" alt="Random Name" width="250" height="255">
-            </div>
-            <div class="col-md-4">
-                <p class="text-center"><strong>Tre Cool</strong></p><br>
-                <img src="img/13.jpg" class="rounded-circle person" alt="Random Name" width="250" height="255">
+    <section id="band">
+        <div class="container text-center mt-5">
+            <h3>GREEN DAY</h3>
+            <p><em>Pop Punk isn't Dead!</em></p>
+            <p>Green Day is an American punk rock band formed in 1986 in Berkeley, California. The band consists of
+                three
+                members, Billie Joe Armstrong (vocals, guitar), Mike Dirnt (bass guitar, backing vocals), and Tré Cool
+                (drums,
+                percussion). They are known for their high-energy performances, catchy melodies, and socially conscious
+                lyrics.
+                Green Day has released over a dozen albums, including the hit albums "Dookie", "American Idiot", and
+                "21st
+                Century
+                Breakdown". They have won multiple Grammy Awards and have been inducted into the Rock and Roll Hall of
+                Fame.
+                With
+                a loyal fan base and a legacy of influential music, Green Day continues to be a significant force in the
+                punk rock
+                genre.</p>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <p class="text-center"><strong>Billi Joe</strong></p><br>
+                    <img src="img/11.jpeg" class="rounded-circle person" alt="Random Name" width="250" height="255">
+                </div>
+                <div class="col">
+                    <p class="text-center"><strong>Mike Dirnt</strong></p><br>
+                    <img src="img/12.jpeg" class="rounded-circle person" alt="Random Name" width="250" height="255">
+                </div>
+                <div class="col">
+                    <p class="text-center"><strong>Tre Cool</strong></p><br>
+                    <img src="img/13.jpg" class="rounded-circle person" alt="Random Name" width="250" height="255">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- End Container (The Band Section) -->
 
 
     <!-- Container (TOUR Section) -->
@@ -142,12 +166,12 @@
             <ul class="list-group">
                 <li class="list-group-item">February <span class="badge bg-danger">Sold Out!</span></li>
                 <li class="list-group-item">March <span class="badge bg-danger">Sold Out!</span></li>
-                <li class="list-group-item">April <span class="badge bg-dark">3</span></li>
+                <li class="list-group-item">March <span class="badge bg-success">Available!</span></li>
             </ul>
 
-            <div class="row text-center mt-5">
-                <div class="col-md-4">
-                    <div class="card">
+            <div class="row row-cols-1 row-cols-md-3 g-4 text-center mt-5">
+                <div class="col">
+                    <div class="card mb-5">
                         <img src="img/jkt.jpeg" class="card-img-top" alt="Paris" width="400" height="300">
                         <div class="card-body">
                             <h5 class="card-title"><strong>Jakarta</strong></h5>
@@ -156,8 +180,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col">
+                    <div class="card mb-5">
                         <img src="img/sby.jpg" class="card-img-top" alt="New York" width="400" height="300">
                         <div class="card-body">
                             <h5 class="card-title"><strong>Surabaya</strong></h5>
@@ -166,8 +190,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col">
+                    <div class="card mb-5">
                         <img src="img/kl.jpg" class="card-img-top" alt="San Francisco" width="400" height="300">
                         <div class="card-body">
                             <h5 class="card-title"><strong>Kuala Lumpur</strong></h5>
@@ -179,12 +203,58 @@
             </div>
         </div>
     </section>
+    <!-- End Container (TOUR Section) -->
 
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container mt-5">
+            <h3 class="text-center">Contact</h3>
+            <p class="text-center"><em>We love our fans!</em></p>
+            <div class="row">
+                <div class="col-md-4">
+
+                    <p><i class="fa-solid fa-location-dot"></i> California, US</p>
+                    <p><i class="fa-solid fa-phone"></i> +00 1515151515</p>
+                    <p><i class="fa-solid fa-envelope"></i> greenday@mail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                required>
+                        </div>
+                    </div>
+                    <textarea class="form-control mt-3" id="comments" name="comments" placeholder="Comment"
+                        rows="5"></textarea>
+                    <div class="row">
+                        <div class="col-md-12 form-group d-flex justify-content-end mt-3 mb-5">
+                            <button class="btn btn-dark" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-light">
+        <br>
+        <p>Made With <i class="fa-solid fa-heart"></i></p>
+    </footer>
+    <!-- End Footer -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+    <script src="https://kit.fontawesome.com/6215114a3f.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
